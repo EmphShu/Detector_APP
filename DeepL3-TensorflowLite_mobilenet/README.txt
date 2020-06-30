@@ -1,0 +1,14 @@
+1.使用Anaconda的tensor环境
+2.使用Start Android Studio项目进行部署
+3.使用flowers_tf_lite.py进行模型训练
+4.APP对安卓5.0以上的所有设备都有良好的支持
+5.为了更好的相机预览体验，采用了TextureView
+视图。能够通过硬件渲染的方式，流畅的显示相机画面。
+6.为了更好的支持旧设备（Android5.0之前），加入了对PreviewCallback回调方式的支持
+7.支持CameraAPI1和CameraAPI2
+8.使用了TextureView控件。SurfaceView效率高，不需要在更新一个子元素或布局的时候进行整体的重绘
+TextureView中的内容可以进行更多的操作，但是必须在硬件加速的窗口中运行。
+TextureView的使用非常简单，我们要做的就是获取用于渲染内容的SurfaceTexture（它能捕获一个图像流
+的一帧来作为OpenGL 的texture也就是纹理。这个图片流主要是来自相机的预览或视频的解码。）。具体做
+法是先创建TextureView对象，然后实现SurfaceTextureListener接口。
+

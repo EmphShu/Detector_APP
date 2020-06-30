@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DictionaryActivity">
+
+    <TextView
+        android:id="@+id/txt_title"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/azure"
+        android:textColor="@color/tfe_color_primary_dark"
+        android:text="病害种类"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:gravity="center"/>
+
+    <FrameLayout
+        android:id="@+id/fl_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_title"/>
+    <Button
+        android:id="@+id/backbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fl_content"
+        android:text="返回"
+        android:textSize="20sp"
+        android:background="@color/white"
+        android:alpha="0.7"/>
+</RelativeLayout>

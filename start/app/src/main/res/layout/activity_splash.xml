@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--添加一张欢迎界面的背景-->
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width = "match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/azure">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="10dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="浙江大学生物系统工程与食品科学学院毕业设计"
+            android:textSize="10sp"
+            android:textColor="@color/tfe_color_primary_dark"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="舒博韬 3160100224"
+            android:textSize="10sp"
+            android:textColor="@color/tfe_color_primary_dark"/>
+    </LinearLayout>
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/APPLabel"
+        android:src="@drawable/detectorlogo" />
+    <TextView
+        android:id="@+id/APPLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="叶片病斑检测"
+        android:textSize="30sp"
+        android:textColor="@color/tfe_color_primary_dark"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:layout_above="@+id/tv_version">
+            <Button
+                android:id="@+id/detect_button"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="实时检测"
+                android:textSize="20dp"
+                android:textColor="@color/tfe_color_primary_dark"
+                android:alpha="0.7"/>
+            <Button
+                android:id="@+id/dictionary"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="病害防治手册"
+                android:textSize="20dp"
+                android:alpha="0.7"
+                android:textColor="@color/tfe_color_primary_dark"/>
+        </LinearLayout>
+
+
+
+    <TextView
+        android:id="@+id/tv_version"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/tfe_color_primary_dark"
+        android:text="Version_3.1  @Copyright Shu Botao ZJU"
+        android:layout_above="@+id/zjulogo"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:textSize="14sp" />
+
+    <ImageView
+        android:id="@+id/zjulogo"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_above="@+id/emptybottom"
+        android:src="@drawable/zju_logo_blue" />
+    <TextView
+        android:id="@+id/emptybottom"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

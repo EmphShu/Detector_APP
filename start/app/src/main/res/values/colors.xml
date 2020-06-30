@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="tfe_color_primary">#0097d8</color>
+    <color name="tfe_color_primary_dark">#003f88</color>
+    <color name="tfe_color_accent">#425066</color>
+    <color name="deepskyblue">#00bfff</color>
+    <color name="azure">#f0ffff</color>
+    <color name="tfe_semi_transparent">#66000000</color>
+    <color name="white">#ffffff</color>
+</resources>
